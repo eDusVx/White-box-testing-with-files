@@ -1,8 +1,13 @@
-"""Programa que realiza a junção de dois arquivos com numeros em uma sequência ordenada"""
+"""
+Programa que realiza a junção de dois arquivos com numeros em uma sequência ordenada
+
+"""
 
 
 def juntar():
-    """Função que realiza a junção dos arquivos."""
+    """
+    Função que realiza a junção dos arquivos.
+    """
     with open('1.txt', 'r', encoding="utf-8") as file1, \
             open('2.txt', 'r', encoding="utf-8") as file2, \
             open('3.txt', 'w', encoding="utf-8") as file3:  # Abrindo arquivos
@@ -34,6 +39,3 @@ def juntar():
             if line.strip():
                 writer.write(line)
             writer.truncate()
-
-
-juntar()
