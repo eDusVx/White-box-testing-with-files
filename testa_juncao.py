@@ -76,8 +76,8 @@ def teste_caminho_5():
     """
     testanto caminho ABCEFHFHFHD onde os dois arquivos tem 3 linha e todos os registros iguais
     """
-    arquivo1 = ['1','10','22']
-    arquivo2 = ['1','10','22']
+    arquivo1 = ['1', '10', '22']
+    arquivo2 = ['1', '10', '22']
     with open('1.txt', 'w', encoding="utf-8") as file1:
         for item in arquivo1:
             file1.write(f'{item}\n')
@@ -86,7 +86,7 @@ def teste_caminho_5():
             file1.write(f'{item}\n')
     juncao.juntar()
     with open('3.txt', 'r', encoding="utf-8") as file3:
-        assert file3.read().splitlines() == ['1', '1','10','10','22','22']
+        assert file3.read().splitlines() == ['1', '1', '10', '10', '22', '22']
 
 
 def teste_caminho_6():
